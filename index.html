@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Fleet Intelligence | ILSM</title>
+<title>ARIA | ILSM Vehicle Analytics</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@ main{margin-left:248px;width:calc(100% - 248px);padding:27px clamp(20px,3.4vw,52
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(69,226,239,.06) 55%,transparent 72%);pointer-events:none}
 .hero-grid{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(rgba(105,205,235,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(105,205,235,.15) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(90deg,transparent,black 70%)}
 .hero-content{position:relative;z-index:1;max-width:690px}.hero-tag{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(69,226,239,.28);border-radius:999px;padding:6px 11px;color:#9ef7f4;font-size:10px;font-weight:800;letter-spacing:1.6px;background:rgba(69,226,239,.07)}
-.hero h2{font:800 clamp(27px,3.5vw,42px)/1.14 Manrope;letter-spacing:-1.2px;margin:17px 0 10px}.hero h2 span{color:var(--cyan);text-shadow:0 0 24px rgba(69,226,239,.25)}.hero p{margin:0;color:#b5cadd;font-size:15px;max-width:600px}.hero-bottom{display:flex;align-items:center;gap:10px;margin-top:22px;color:#8fa9c0;font-size:11px}.hero-line{height:1px;width:38px;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.hero h2{font:800 clamp(27px,3.5vw,42px)/1.14 Manrope;letter-spacing:-1.2px;margin:17px 0 10px}.hero h2 span{color:var(--cyan);text-shadow:0 0 24px rgba(69,226,239,.25);font-size:clamp(15px,1.7vw,21px);letter-spacing:0;line-height:1.45}.hero p{margin:0;color:#b5cadd;font-size:12px;max-width:600px;letter-spacing:1.5px}.hero-bottom{display:flex;align-items:center;gap:10px;margin-top:22px;color:#8fa9c0;font-size:11px}.hero-line{height:1px;width:38px;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
 .filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 19px}.filter{background:#0c1a2a;color:#e8f5ff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:135px;outline:none}.filter:focus{border-color:var(--cyan)}.filter-label{font-size:11px;color:var(--muted);font-weight:700;margin-right:-4px}
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:17px}.card{background:linear-gradient(145deg,rgba(15,32,51,.96),rgba(10,24,40,.96));border:1px solid var(--line);border-radius:17px;padding:19px;box-shadow:0 10px 30px rgba(0,0,0,.12);min-width:0}.kpi-top{display:flex;justify-content:space-between;align-items:center;color:#a9bfd3;font-size:12px;font-weight:600}.kpi-icon{height:32px;width:32px;border-radius:10px;display:grid;place-items:center;color:var(--cyan);background:rgba(69,226,239,.1);font-size:16px}.kpi-value{font:800 clamp(22px,2.3vw,30px) Manrope;letter-spacing:-.8px;margin:12px 0 3px;color:#f2fbff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.kpi-note{font-size:11px;color:#7f9ab3}
 .grid-2{display:grid;grid-template-columns:1.35fr 1fr;gap:15px;margin-bottom:15px}.grid-equal{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:15px}.card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:16px}.card-head h3{font:700 15px Manrope;margin:0;color:#eff8ff}.card-head p{font-size:11px;color:#819ab1;margin:4px 0 0}.mini-tag{font-size:10px;color:#8deef0;border:1px solid rgba(69,226,239,.2);border-radius:99px;padding:5px 8px;white-space:nowrap}.chart-wrap{height:260px;position:relative}.chart-wrap.short{height:225px}
@@ -35,7 +35,7 @@ main{margin-left:248px;width:calc(100% - 248px);padding:27px clamp(20px,3.4vw,52
 <body>
 <div class="app">
 <aside class="sidebar">
-  <div class="brand"><div class="brand-mark">AI</div><div class="brand-copy"><strong>FLEET INTELLIGENCE</strong><small>ILSM · DIGITAL INSIGHT</small></div></div>
+  <div class="brand"><div class="brand-mark">A</div><div class="brand-copy"><strong>ARIA</strong><small>VEHICLE ANALYTICS · ILSM</small></div></div>
   <div class="nav-label">MENU UTAMA</div>
   <nav class="nav">
     <button class="active" data-target="overview"><span class="ico">◈</span><span class="nav-text">Ringkasan</span></button>
@@ -48,15 +48,14 @@ main{margin-left:248px;width:calc(100% - 248px);padding:27px clamp(20px,3.4vw,52
 </aside>
 <main>
   <div class="topbar">
-    <div><div class="eyebrow">INSTITUT LATIHAN STATISTIK MALAYSIA</div><h1>AI Fleet Intelligence</h1></div>
+    <div><div class="eyebrow">INSTITUT LATIHAN STATISTIK MALAYSIA</div><h1>ARIA</h1></div>
     <div class="top-actions"><span class="pill">● LIVE DATA VIEW</span><button class="btn" id="uploadBtn">＋ Muat naik CSV</button><input id="fileInput" type="file" accept=".csv" hidden></div>
   </div>
   <section class="hero">
     <div class="hero-grid"></div><div class="hero-content">
       <div class="hero-tag">✦ INTELLIGENT FLEET ANALYTICS</div>
-      <h2>Data yang jelas.<br><span>Keputusan yang lebih bijak.</span></h2>
-      <p>Platform pemantauan dan analisis prestasi kenderaan ILSM. Tukarkan rekod operasi kepada maklumat yang membantu perancangan dan keputusan.</p>
-      <div class="hero-bottom"><span class="hero-line"></span> INSIGHT · PERFORMANCE · EFFICIENCY</div>
+      <h2>ARIA<br><span>Automotive Research &amp; Intelligence Analytics</span></h2>
+      <p>INSTITUT LATIHAN STATISTIK MALAYSIA (ILSM)</p>
     </div>
   </section>
   <div class="filters">
@@ -117,7 +116,7 @@ main{margin-left:248px;width:calc(100% - 248px);padding:27px clamp(20px,3.4vw,52
   <section id="records" class="section">
     <div class="card"><div class="card-head"><div><h3>Rekod Data Operasi</h3><p>Senarai rekod daripada fleet_data.csv</p></div><span class="mini-tag" id="recordCount">0 REKOD</span></div><div class="table-wrap"><table><thead id="recordHead"></thead><tbody id="recordBody"></tbody></table></div></div>
   </section>
-  <div class="footer"><span>© 2026 Institut Latihan Statistik Malaysia</span><span>AI FLEET INTELLIGENCE · PREMIUM EDITION</span></div>
+  <div class="footer"><span>© 2026 Institut Latihan Statistik Malaysia</span><span>ARIA · VEHICLE ANALYTICS</span></div>
 </main>
 </div>
 <script>
